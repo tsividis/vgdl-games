@@ -1,0 +1,2728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress HtmlUnknownTag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <script src="js/head.js?prefix="></script>
+    <meta name="description" content="Jiajun Wu is a PhD student at EECS, MIT, advised by Professor Bill Freeman and Professor Josh Tenenbaum. His research interests lie in the intersection of computer vision, machine learning, computational cognitive science.">
+    <meta name="keywords" content="Jiajun Wu,Computer,Vision,Machine,Learning,Cognitive,Science,Homepage">
+    <title>Jiajun Wu</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <script async type="text/javascript" src="js/google.js"></script>
+
+  <script src='/google_analytics_auto.js'></script></head>
+
+  <body>
+
+    <div class="outercontainer">
+      
+      <script src="js/header.js?prefix="></script>
+      <div class="container body">
+
+        <div class="content heading anchor" id="home">
+          <div class="img"><img class="img_responsive" src="images/Jiajun_Wu.jpg" alt="Photo"></div>
+          <div class="text info">
+            <h1>Jiajun Wu</h1>
+            <p/>
+            <div>Ph.D. Student, EECS, MIT</div>
+            <div>Email:&nbsp;</td><td>jiajunwu [at] mit (dot) edu</div>
+            <p/>
+            <span><a href="https://scholar.google.com/citations?user=2efgcS0AAAAJ&hl=en&oi=ao">Google Scholar</a></span> / 
+            <span class="tag"><a href="http://dblp.dagstuhl.de/pers/hd/w/Wu_0001:Jiajun">DBLP</a></span>
+            <p/>
+          </div>
+          <div class="text topic">
+            <p/>
+            <div class="title">Research Topics</div>
+            <ul>
+              <li><a href="#phys" onclick="showPubs(2)">Physical Scene Understanding</a></li>
+              <li><a href="#robot" onclick="showPubs(2)">Dynamics Models for Robot Manipulation</a></li>
+              <li><a href="#reason" onclick="showPubs(2)">Neuro-Symbolic Visual Reasoning</a></li>
+              <li><a href="#gen" onclick="showPubs(2)">Generative Visual Models</a></li>
+              <li><a href="#multi" onclick="showPubs(2)">Multi-Modal Perception</a></li>
+            </ul>
+            <p/>
+          </div>
+          <div class="text">
+            <p>I am a PhD student at MIT, advised by <a href="http://billf.mit.edu">Bill Freeman</a> 
+            and <a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a>. 
+            I received my undergraduate degree from Tsinghua University, working with
+            <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>.
+            I have also spent time at research labs of Microsoft, Facebook, and Baidu.
+            My research has been supported by fellowships from <a href="https://research.fb.com/Fellows/">Facebook</a>, <a href="http://research.nvidia.com/grad-fellowship/2016">Nvidia</a>, <a href="https://news.samsung.com/global/samsung-phd-fellowship-program-recognizes-best-and-brightest-student-innovators">Samsung</a>, Baidu, and <a href="https://research.adobe.com/fellowship/previous-fellowship-award-winners/">Adobe</a>.
+            </p>
+
+            <p>I study machine perception, reasoning, and its interaction with the physical world, drawing inspiration from human cognition.</p>
+          </div>
+        </div>
+
+        <div class="content" style="z-index:1;position:relative">
+          <div class="text">
+            <h3 style="margin-bottom:.5em">News</h3>
+            <ul style="padding-bottom:1em">
+                <li>I co-organized the <a href="http://www.visionmeetscognition.org/">Vision Meets Cognition</a> workshop and the <a href="http://sightsound.org">Sight and Sound</a> workshop at CVPR 2019. I also gave invited talks at the 3D Scene Generation workshop (<a href="talks/scenegen_cvpr19.pdf">slides</a>), the 3D-WiDGET workshop (<a href="talks/3dwidget_cvpr19.pdf">slides</a>), and the 3D Scene Understanding workshop (<a href="talks/sceneunderstanding_cvpr19.pdf">slides</a>).</li>
+              <li><a href="http://nscl.csail.mit.edu">The neuro-symbolic concept learner</a> was selected for an oral presentation at ICLR 2019.</li>
+              <li><a href="http://genre.csail.mit.edu">Learning to reconstruct shapes from unseen classes</a> was selected for an oral presentation at NeurIPS 2018.</li>
+              <li><a href="http://robotics.sciencemag.org/content/4/26/eaav3123">Making robots learn to play Jenga</a> is now online at Science Robotics.</li>
+              <li>Our paper on <a href="http://physplus.csail.mit.edu">combining physical simulators with neural nets</a> won the <span style="font-weight:bolder;color:#BB2222">IROS Best Paper Award on Cognitive Robotics</span>.</li>
+              <li>I co-organized the <a href="http://phys2018.csail.mit.edu">Modeling the Physical World</a> workshop at NeurIPS'18 and the <a href="https://sites.google.com/stanford.edu/rss18-causal-imitation">Imitation and Causality</a> workshop at RSS'18.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content anchor" id="publications">
+          <div class="text" style="z-index:1;position:relative">
+            <h3 style="margin-bottom:0em">
+              Publications 
+                (<a href="" id="select0" onclick="showPubs(0); return false;">show selected</a> / 
+                <a href="" id="select1" onclick="showPubs(1); return false;">show all by date</a> / 
+                <a href="" id="select2" onclick="showPubs(2); return false;">show all by topic</a>)
+            </h3>
+          </div>
+          
+          <div id="pubs"></div>
+
+          <script id="pubs_selected" language="text">
+            
+            <div class="text anchor">&nbsp;</div>
+                     
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nscl.jpg" alt="spotlight_nscl"></div>
+              <div class="text">
+                <div class="title"><a name="nscl_iclr" href="papers/nscl_iclr.pdf">The Neuro-Symbolic Concept Learner:<br/>Interpreting Scenes, Words, and Sentences from Natural Supervision</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://jiayuanm.com/">Jiayuan Mao</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJgMlhRctm">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/nscl_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nscl.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/teaching-machines-to-reason-about-what-they-see-0402">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/613270/two-rival-ai-approaches-combine-to-let-machines-learn-about-the-world-like-a-child/">MIT Technology Review</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_o2p2.jpg" alt="spotlight_o2p2"></div>
+              <div class="text">
+                <div class="title"><a name="o2p2_iclr" href="papers/o2p2_iclr.pdf">Reasoning About Physical Interactions with Object-Oriented Prediction and Planning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a></span>,
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=HJx9EhC9tQ">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/o2p2_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://people.eecs.berkeley.edu/~janner/o2p2/">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_jenga.jpg" alt="spotlight_jenga"></div>
+              <div class="text">
+                <div class="title"><a name="jenga_scirobot" href="papers/jenga_scirobot.pdf">See, Feel, Act: Hierarchical Learning for Complex Manipulation Skills with Multi-sensory Fusion</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author">Miquel Oller</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/zhengwu/">Zheng Wu</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://robotics.sciencemag.org/content/4/26/eaav3123">Science Robotics 2019</a></span> /
+                  <span class="tag"><a href="papers/jenga_scirobot.pdf">Paper</a></span> /
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=o1j_amoldMs">Video</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/robot-jenga-0130">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.bbc.com/news/av/technology-47094822/mit-develops-robot-that-uses-ai-to-play-jenga-game">BBC</a></span> /
+                  <span class="tag"><a href="https://www.cbsnews.com/video/mit-students-develop-a-jenga-playing-robot/">CBS</a></span> /
+                  <span class="tag"><a href="https://us.cnn.com/2019/01/31/americas/mit-jenga-robot-scli-intl/index.html">CNN</a></span> /
+                  <!-- <span class="tag"><a href="https://techcrunch.com/2019/01/30/mit-researchers-are-training-a-robot-arm-to-play-jenga/">TechCrunch</a></span> / 
+                  <span class="tag"><a href="https://gizmodo.com/touchy-feely-robots-have-learned-to-play-jenga-as-well-1832121237">Gizmodo</a></span> /
+                  <span class="tag"><a href="https://www.popsci.com/jenga-playing-robot-artificial-intelligence">Popular Science</a></span> / -->
+                  <span class="tag"><a href="https://www.theguardian.com/technology/2019/jan/31/block-party-scientists-celebrate-robot-that-can-play-jenga">The Guardian</a></span> /
+                  <span class="tag"><a href="https://www.wired.com/story/a-robot-teaches-itself-to-play-jenga/">WIRED</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_genre.jpg" alt="spotlight_genre"></div>
+              <div class="text">
+                <div class="title"><a name="genre_nips" href="papers/genre_nips.pdf">Learning to Reconstruct Shapes from Unseen Classes</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>*</span>,
+                  <span class="author">Zhoutong Zhang*</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,  
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                  <span class="tag">(* indicates equal contribution)</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/genre_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://genre.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nsvqa.jpg" alt="spotlight_nsvqa"></div>
+              <div class="text">
+                <div class="title"><a name="nsvqa_nips" href="papers/nsvqa_nips.pdf">Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding</a></div>
+                <div class="authors">
+                  <span class="author">Kexin Yi*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> / 
+                  <span class="tag"><a href="papers/nsvqa_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nsvqa.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_physplus.jpg" alt="Spotlight_physplus"></div>
+              <div class="text">
+                <div class="title"><a name="physplus_iros" href="papers/physplus_iros.pdf">Augmenting Physical Simulators with Stochastic Neural Networks:<br/>Case Study of Planar Pushing and Bouncing</a></div>
+                <div class="authors">
+                  <span class="author">Anurag Ajay</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/bauza/www/">Maria Bauza</a></span>,
+                  <span class="author"><a href="https://people.csail.mit.edu/lpk/">Leslie P. Kaelbling</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.iros2018.org/">IROS 2018</a></span> / 
+                  <span class="tag"><a href="papers/physplus_iros.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://physplus.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Best Paper on Cognitive Robotics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vd.gif" alt="Spotlight_vd"></div>
+              <div class="text">
+                <div class="title"><a name="vd_tpami" href="papers/vd_tpami.pdf">Visual Dynamics: Probabilistic Future Frame Synthesis via Cross Convolutional Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/klbouman/">Katherine L. Bouman</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/8409321/">TPAMI 2019</a></span> / 
+                  <span class="tag"><a href="papers/vd_tpami.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://visualdynamics.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/vd_nips.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dinn.jpg" alt="Spotlight_3dinn"></div>
+              <div class="text">
+                <div class="title"><a name="3dinn_ijcv" href="papers/3dinn_ijcv.pdf">3D Interpreter Networks for Viewer-Centered Wireframe Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://yuandong-tian.com">Yuandong Tian</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/article/10.1007/s11263-018-1074-6">IJCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dinterpreter.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.eccv2016.org/">ECCV 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_eccv.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_humanphys.jpg" alt="Spotlight_humanphys"></div>
+              <div class="text">
+                <div class="title"><a name="humanphys_ccn" href="papers/humanphys_ccn.pdf">Neurocomputational Modeling of Human Physical Scene Understanding</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~k2smith/">Kevin Smith</a>*</span>,
+                  <span class="author">Mario Belledonne*</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ccneuro.org/">CCN 2018</a></span> / 
+                  <span class="tag"><a href="papers/humanphys_ccn.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vda.gif" alt="spotlight_vda"></div>
+              <div class="text">
+                <div class="title"><a name="vda_nips" href="papers/vda_nips.pdf">Learning to See Physics via Visual De-animation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Erika Lu</span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/vda_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://vda.csail.mit.edu">Project Page</a></span> / 
+                  <span class="tag"><a href="http://news.mit.edu/2017/computer-systems-predict-objects-responses-physical-forces-1214">MIT News</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_marrnet.jpg" alt="Spotlight_marrnet"></div>
+              <div class="text">
+                <div class="title"><a name="marrnet_nips" href="papers/marrnet_nips.pdf">MarrNet: 3D Shape Reconstruction via 2.5D Sketches</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="https://homes.cs.washington.edu/~yifan1/">Yifan Wang</a>*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/marrnet_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://marrnet.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_fastsound.jpg" alt="Spotlight_fastsound"></div>
+              <div class="text">
+                <div class="title"><a name="fastsound_nips" href="papers/fastsound_nips.pdf">Shape and Material from Sound</a></div>
+                <div class="authors">
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author"><a href="http://liqiujia.com/">Qiujia Li</a></span>, 
+                  <span class="author">Zhengjia Huang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/fastsound_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sound.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dgan.jpg" alt="Spotlight_3dgan"></div>
+              <div class="text">
+                <div class="title"><a name="3dgan_nips" href="papers/3dgan_nips.pdf">Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dgan_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dgan.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/603107/ai-begins-to-understand-the-3-d-world/">MIT Technology Review</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_galileo.jpg" alt="Spotlight_galileo"></div>
+              <div class="text">
+                <div class="title"><a name="galileo_nips" href="papers/galileo_nips.pdf">Galileo: Perceiving Physical Object Properties by Integrating a Physics Engine with Deep Learning</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2015">NeurIPS 2015</a></span> / 
+                  <span class="tag"><a href="papers/galileo_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://galileo.csail.mit.edu">Project Page</a></span> / 
+                  <!-- <span class="tag"><a href="http://phys.csail.mit.edu/galileo/mass/">Demo</a></span> -->
+                  <span class="tag"><a href="http://news.mit.edu/2016/csail-computer-model-matches-humans-predicting-how-objects-move-0104">MIT News</a></span> / 
+                  <span class="tag"><a href="http://motherboard.vice.com/read/how-to-teach-a-robot-to-build-a-rube-goldberg-machine">VICE</a></span> / 
+                  <span class="tag"><a href="http://www.wired.com/2016/01/mit-researchers-are-figuring-out-how-robots-can-wash-dishes/">WIRED</a></span> / 
+                  <span class="tag"><a href="http://www.engadget.com/2016/01/05/mit-galileo-object-predictions/">Engadget</a></span>
+                  <!-- <span class="tag"><a href="http://www.popsci.com/new-computer-program-can-predict-how-things-will-move-just-like-us">Popular Science</a></span> / 
+                  <span class="tag"><a href="http://www.betaboston.com/news/2016/01/04/mit-system-makes-human-like-predictions-about-how-objects-move-through-the-world/">The Boston Globe</a></span> / 
+                  <span class="tag"><a href="http://www.pcworld.com/article/3019425/meet-galileo-a-new-ai-system-from-mit-that-could-help-robots-help-us-during-disasters.html">PCWorld</a></span> / 
+                  <span class="tag"><a href="http://www.techradar.com/us/news/world-of-tech/how-researchers-are-teaching-computers-the-laws-of-physics-1312452">TechRadar</a></span> -->
+                </div>
+              </div>
+            </div>
+
+          </script>    
+          
+          <script id="pubs_by_date" language="text">
+            
+            <div class="text anchor"><h4>2019</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_combsound.jpg" alt="spotlight_combsound"></div>
+              <div class="text">
+                <div class="title"><a name="combsound_ccn" href="papers/combsound_ccn.pdf">A Computational Model for Combinatorial Generalization in Physical Perception from Sound</a></div>
+                <div class="authors">
+                  <span class="author">Yunyun Wang</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/maxs/www/">Max H. Siegel</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ccneuro.org/2019/">CCN 2019</a></span> /
+                  <span class="tag"><a href="papers/combsound_ccn.pdf">Paper</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_densephysnet.gif" alt="spotlight_densephysnet"></div>
+              <div class="text">
+                <div class="title"><a name="densephysnet_rss" href="papers/densephysnet_rss.pdf">DensePhysNet: Learning Dense Physical Object Representations via Multi-step Dynamic Interactions</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://www.zhenjiaxu.com/">Zhenjia Xu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://andyzeng.github.io/">Andy Zeng</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://shurans.github.io/">Shuran Song</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://www.roboticsconference.org/">RSS 2019</a></span> /
+                  <span class="tag"><a href="papers/densephysnet_rss.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://www.zhenjiaxu.com/DensePhysNet/">Project Page</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ngsi.jpg" alt="spotlight_ngsi"></div>
+              <div class="text">
+                <div class="title"><a name="ngsi_icml" href="papers/ngsi_icml.pdf">Neurally-Guided Structure Inference</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://sidilu.cn/">Sidi Lu</a>*</span>,
+                  <span class="author"><a href="http://jiayuanm.com/">Jiayuan Mao</a>*</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                  <span class="tag">(* indicates equal contribution)</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://proceedings.mlr.press/v97/lu19b.html">ICML 2019</a></span> /
+                  <span class="tag"><a href="papers/ngsi_icml.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ngsi.csail.mit.edu">Project Page</a></span> 
+                </div>
+              </div>
+            </div>
+
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nscl.jpg" alt="spotlight_nscl"></div>
+              <div class="text">
+                <div class="title"><a name="nscl_iclr" href="papers/nscl_iclr.pdf">The Neuro-Symbolic Concept Learner:<br/>Interpreting Scenes, Words, and Sentences from Natural Supervision</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://jiayuanm.com/">Jiayuan Mao</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJgMlhRctm">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/nscl_iclr.pdf">Paper</a></span> /
+                  <span class="tag"><a href="http://nscl.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/teaching-machines-to-reason-about-what-they-see-0402">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/613270/two-rival-ai-approaches-combine-to-let-machines-learn-about-the-world-like-a-child/">MIT Technology Review</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_o2p2.jpg" alt="spotlight_o2p2"></div>
+              <div class="text">
+                <div class="title"><a name="o2p2_iclr" href="papers/o2p2_iclr.pdf">Reasoning About Physical Interactions with Object-Oriented Prediction and Planning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a></span>,
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=HJx9EhC9tQ">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/o2p2_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://people.eecs.berkeley.edu/~janner/o2p2/">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_dpi.jpg" alt="Spotlight_dpi"></div>
+              <div class="text">
+                <div class="title"><a name="dpi_iclr" href="papers/dpi_iclr.pdf">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJgbSn09Ym">ICLR 2019</a></span> / 
+                  <span class="tag"><a href="papers/dpi_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://dpi.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/robots-object-manipulation-particle-simulator-0417">MIT News</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_shape2prog.jpg" alt="spotlight_shape2prog"></div>
+              <div class="text">
+                <div class="title"><a name="shape2prog_iclr" href="papers/shape2prog_iclr.pdf">Learning to Infer and Execute 3D Shape Programs</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/yonglong/">Yonglong Tian</a></span>,
+                  <span class="author">Andrew Luo</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/ellisk/www/">Kevin Ellis</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rylNH20qFQ">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/shape2prog_iclr.pdf">Paper</a></span> /
+                  <span class="tag"><a href="http://shape2prog.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_psd.jpg" alt="spotlight_psd"></div>
+              <div class="text">
+                <div class="title"><a name="psd_iclr" href="papers/psd_iclr.pdf">Unsupervised Discovery of Parts, Structure, and Dynamics</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://www.zhenjiaxu.com/">Zhenjia Xu</a>*</span>,
+                  <span class="author">Zhijian Liu*</span>,
+                  <span class="author"><a href="http://chensun.me/">Chen Sun</a></span>,
+                  <span class="author"><a href="https://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJe10iC5K7">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/psd_iclr.pdf">Paper</a></span> /
+                  <span class="tag"><a href="http://psd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_soccer.jpg" alt="spotlight_soccer"></div>
+              <div class="text">
+                <div class="title"><a name="soccer_iclr" href="papers/soccer_iclr.pdf">Stochastic Prediction of Multi-Agent Interactions from Partial Observations</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://chensun.me/">Chen Sun</a></span>,
+                  <span class="author">Per Karlsson</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="https://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=r1xdH3CcKX">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/soccer_iclr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_scene2prog.jpg" alt="spotlight_scene2prog"></div>
+              <div class="text">
+                <div class="title"><a name="scene2prog_iclr" href="papers/scene2prog_iclr.pdf">Learning to Describe Scenes with Programs</a></div> 
+                <div class="authors">
+                  <span class="author">Yunchao Liu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/zhengwu/">Zheng Wu</a></span>,
+                  <span class="author"><a href="https://dritchie.github.io/">Daniel Ritchie</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=SyNPk2R9K7">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/scene2prog_iclr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_jenga.jpg" alt="spotlight_jenga"></div>
+              <div class="text">
+                <div class="title"><a name="jenga_scirobot" href="papers/jenga_scirobot.pdf">See, Feel, Act: Hierarchical Learning for Complex Manipulation Skills with Multi-sensory Fusion</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author">Miquel Oller</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/zhengwu/">Zheng Wu</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://robotics.sciencemag.org/content/4/26/eaav3123">Science Robotics 2019</a></span> /
+                  <span class="tag"><a href="papers/jenga_scirobot.pdf">Paper</a></span> /
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=o1j_amoldMs">Video</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/robot-jenga-0130">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.bbc.com/news/av/technology-47094822/mit-develops-robot-that-uses-ai-to-play-jenga-game">BBC</a></span> /
+                  <span class="tag"><a href="https://www.cbsnews.com/video/mit-students-develop-a-jenga-playing-robot/">CBS</a></span> /
+                  <span class="tag"><a href="https://us.cnn.com/2019/01/31/americas/mit-jenga-robot-scli-intl/index.html">CNN</a></span> /
+                  <!-- <span class="tag"><a href="https://techcrunch.com/2019/01/30/mit-researchers-are-training-a-robot-arm-to-play-jenga/">TechCrunch</a></span> / 
+                  <span class="tag"><a href="https://gizmodo.com/touchy-feely-robots-have-learned-to-play-jenga-as-well-1832121237">Gizmodo</a></span> /
+                  <span class="tag"><a href="https://www.popsci.com/jenga-playing-robot-artificial-intelligence">Popular Science</a></span> / -->
+                  <span class="tag"><a href="https://www.theguardian.com/technology/2019/jan/31/block-party-scientists-celebrate-robot-that-can-play-jenga">The Guardian</a></span> /
+                  <span class="tag"><a href="https://www.wired.com/story/a-robot-teaches-itself-to-play-jenga/">WIRED</a></span> 
+                 </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_cortex.jpg" alt="spotlight_cortex"></div>
+              <div class="text">
+                <div class="title"><a name="cortex_coneur" href="papers/cortex_coneur.pdf">An Integrative Computational Architecture for Object-Driven Cortex</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://bcs.mit.edu/users/ngkmitedu">Nancy Kanwisher</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.sciencedirect.com/science/article/pii/S0959438818301995">CONEUR 2019</a></span> /
+                  <span class="tag"><a href="papers/cortex_coneur.pdf">Paper</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_chainqueen.jpg" alt="Spotlight_chainqueen"></div>
+              <div class="text">
+                <div class="title"><a name="chainqueen_icra" href="papers/chainqueen_icra.pdf">ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://taichi.graphics/me/">Yuanming Hu</a></span>,
+                  <span class="author">Jiancheng Liu*</span>,
+                  <span class="author"><a href="http://andrewspielberg.com/">Andrew Spielberg</a>*</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://danielarus.csail.mit.edu/">Daniela Rus</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> / 
+                  <span class="tag"><a href="papers/chainqueen_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://github.com/yuanming-hu/ChainQueen">Project Page</a></span> / 
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=4IWD4iGIsB4">Video</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_propnet.jpg" alt="Spotlight_propnet"></div>
+              <div class="text">
+                <div class="title"><a name="propnet_icra" href="papers/propnet_icra.pdf">Propagation Networks for Model-Based Control Under Partial Observation</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> / 
+                  <span class="tag"><a href="papers/propnet_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://propnet.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_sain.jpg" alt="Spotlight_sain"></div>
+              <div class="text">
+                <div class="title"><a name="sain_icra" href="papers/sain_icra.pdf">Combining Physical Simulators and Object-Based Networks for Control</a></div>
+                <div class="authors">
+                  <span class="author">Anurag Ajay</span>,
+                  <span class="author"><a href="http://web.mit.edu/bauza/www/">Maria Bauza</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>,
+                  <span class="author"><a href="https://people.csail.mit.edu/lpk/">Leslie P. Kaelbling</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> /
+                  <span class="tag"><a href="papers/sain_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sain.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_toflow.jpg" alt="Spotlight_toflow"></div>
+              <div class="text">
+                <div class="title"><a name="toflow_ijcv" href="papers/toflow_ijcv.pdf">Video Enhancement with Task-Oriented Flow</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><span class="author"><a href="http://anchen.me/">Baian Chen</a></span></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><span class="author"><a href="https://donglaiw.github.io/">Donglai Wei</a></span></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/journal/11263">IJCV 2019</a></span> / 
+                  <span class="tag"><a href="papers/toflow_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://toflow.csail.mit.edu/">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vd.gif" alt="Spotlight_vd"></div>
+              <div class="text">
+                <div class="title"><a name="vd_tpami" href="papers/vd_tpami.pdf">Visual Dynamics: Stochastic Future Generation via Layered Cross Convolutional Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/klbouman/">Katherine L. Bouman</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/8409321/">TPAMI 2019</a></span> / 
+                  <span class="tag"><a href="papers/vd_tpami.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://visualdynamics.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor"><h4>2018</h4></div>
+           
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_genre.jpg" alt="spotlight_genre"></div>
+              <div class="text">
+                <div class="title"><a name="genre_nips" href="papers/genre_nips.pdf">Learning to Reconstruct Shapes from Unseen Classes</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>*</span>,
+                  <span class="author">Zhoutong Zhang*</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,  
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/genre_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://genre.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nsvqa.jpg" alt="spotlight_nsvqa"></div>
+              <div class="text">
+                <div class="title"><a name="nsvqa_nips" href="papers/nsvqa_nips.pdf">Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding</a></div>
+                <div class="authors">
+                  <span class="author">Kexin Yi*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> / 
+                  <span class="tag"><a href="papers/nsvqa_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nsvqa.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_scenephys.jpg" alt="spotlight_scenephys"></div>
+              <div class="text">
+                <div class="title"><a name="scenephys_nips" href="papers/scenephys_nips.pdf">Learning to Exploit Stability for 3D Scene Parsing</a></div>
+                <div class="authors">
+                  <span class="author">Yilun Du</span>,
+                  <span class="author">Zhijian Liu</span>,
+                  <span class="author"><a href="https://www.cs.bham.ac.uk/~basevhra/">Hector Basevi</a></span>,
+                  <span class="author"><a href="https://www.cs.bham.ac.uk/~leonarda/index.html">Ales Leonardis</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/scenephys_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://scenephys.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_von.jpg" alt="spotlight_von"></div>
+              <div class="text">
+                <div class="title"><a name="von_nips" href="papers/von_nips.pdf">Visual Object Networks: Image Generation with Disentangled 3D Representations</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/von_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://von.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dsdn.jpg" alt="spotlight_3dsdn"></div>
+              <div class="text">
+                <div class="title"><a name="3dsdn_nips" href="papers/3dsdn_nips.pdf">3D-Aware Scene Manipulation via Inverse Graphics</a></div>
+                <div class="authors">
+                  <span class="author">Shunyu Yao</span>,
+                  <span class="author"><a href="https://stmharry.github.io/">Tzu-Ming Harry Hsu</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> / 
+                  <span class="tag"><a href="papers/3dsdn_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dsdn.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_physplus.jpg" alt="Spotlight_physplus"></div>
+              <div class="text">
+                <div class="title"><a name="physplus_iros" href="papers/physplus_iros.pdf">Augmenting Physical Simulators with Stochastic Neural Networks:<br/>Case Study of Planar Pushing and Bouncing</a></div>
+                <div class="authors">
+                  <span class="author">Anurag Ajay</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/bauza/www/">Maria Bauza</a></span>,
+                  <span class="author"><a href="https://people.csail.mit.edu/lpk/">Leslie P. Kaelbling</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.iros2018.org/">IROS 2018</a></span> / 
+                  <span class="tag"><a href="papers/physplus_iros.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://physplus.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Best Paper on Cognitive Robotics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_touch.jpg" alt="Spotlight_touch"></div>
+              <div class="text">
+                <div class="title"><a name="touch_iros" href="papers/touch_iros.pdf">3D Shape Perception from Monocular Vision, Touch, and Shape Priors</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://wx405557858.github.io/">Shaoxiong Wang</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/yuan_wz/">Wenzhen Yuan</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://persci.mit.edu/people/adelson">Edward H. Adelson</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.iros2018.org/">IROS 2018</a></span> / 
+                  <span class="tag"><a href="papers/touch_iros.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://touch.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dinn.jpg" alt="Spotlight_3dinn"></div>
+              <div class="text">
+                <div class="title"><a name="3dinn_ijcv" href="papers/3dinn_ijcv.pdf">3D Interpreter Networks for Viewer-Centered Wireframe Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://yuandong-tian.com">Yuandong Tian</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/article/10.1007/s11263-018-1074-6">IJCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dinterpreter.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ambient.jpg" alt="Spotlight_ambient"></div>
+              <div class="text">
+                <div class="title"><a name="ambient_ijcv" href="papers/ambient_ijcv.pdf">Learning Sight from Sound: Ambient Sound Provides Supervision for Visual Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://andrewowens.org">Andrew Owens</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/jhm/www/">Josh H. McDermott</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/article/10.1007/s11263-018-1083-5">IJCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/ambient_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://andrewowens.com/ambient/index.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ppd.jpg" alt="Spotlight_ppd"></div>
+              <div class="text">
+                <div class="title"><a name="ppd_eccv" href="papers/ppd_eccv.pdf">Physical Primitive Decomposition</a></div>
+                <div class="authors">
+                  <span class="author">Zhijian Liu</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/ppd_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ppd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_shapehd.jpg" alt="Spotlight_shapehd"></div>
+              <div class="text">
+                <div class="title"><a name="shapehd_eccv" href="papers/shapehd_eccv.pdf">Learning Shape Priors for Single-View 3D Completion and Reconstruction</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/shapehd_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://shapehd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_tree.jpg" alt="Spotlight_tree"></div>
+              <div class="text">
+                <div class="title"><a name="tree_eccv" href="papers/tree_eccv.pdf">Seeing Tree Structure from Vibration</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/tree_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://tree.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_humanphys.jpg" alt="Spotlight_humanphys"></div>
+              <div class="text">
+                <div class="title"><a name="humanphys_ccn" href="papers/humanphys_ccn.pdf">Neurocomputational Modeling of Human Physical Scene Understanding</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~k2smith/">Kevin Smith</a>*</span>,
+                  <span class="author">Mario Belledonne*</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ccneuro.org/">CCN 2018</a></span> / 
+                  <span class="tag"><a href="papers/humanphys_ccn.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_mosculp.gif" alt="Spotlight_mosculp"></div>
+              <div class="text">
+                <div class="title"><a name="mosculp_uist" href="papers/mosculp_uist.pdf">MoSculp: Interactive Visualization of Shape and Time</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/talidekel/">Tali Dekel</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://andrewowens.org">Andrew Owens</a></span>,
+                  <span class="author">Qiurui He</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://hcie.csail.mit.edu/stefanie-mueller.html">Stefanie Mueller</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://uist.acm.org/uist2018/">UIST 2018</a></span> / 
+                  <span class="tag"><a href="papers/mosculp_uist.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://mosculp.csail.mit.edu">Project Page</a></span> / 
+                  <span class="tag"><a href="http://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919">MIT News</a></span> / 
+                  <span class="tag"><a href="https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures/#5271cd2243c2">Forbes</a></span> / 
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=5J3LhRwx7nE&feature=youtu.be&t=9m13s">BBC</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ppn.jpg" alt="spotlight_ppn"></div>
+              <div class="text">
+                <div class="title"><a name="ppn_uai" href="papers/ppn_uai.pdf">Unsupervised Learning of Latent Physical Properties Using Perception-Prediction Networks</a></div>
+                <div class="authors">
+                  <span class="author">David Zheng</span>,
+                  <span class="author">Vinson Luo</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://auai.org/uai2018/index.php">UAI 2018</a></span> / 
+                  <span class="tag"><a href="papers/ppn_uai.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ppn.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_pix3d.jpg" alt="spotlight_pix3d"></div>
+              <div class="text">
+                <div class="title"><a name="pix3d_cvpr" href="papers/pix3d_cvpr.pdf">Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2018.thecvf.com/">CVPR 2018</a></span> / 
+                  <span class="tag"><a href="papers/pix3d_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://pix3d.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_attn.jpg" alt="spotlight_attn"></div>
+              <div class="text">
+                <div class="title"><a name="attn_cvpr" href="papers/attn_cvpr.pdf">Attention Clusters: Purely Attention Based Local Feature Integration for Video Classification</a></div>
+                <div class="authors">
+                  <span class="author">Xiang Long</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author">Gerard de Melo</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Xiao Liu</span>,
+                  <span class="author">Shilei Wen</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2018.thecvf.com/">CVPR 2018</a></span> / 
+                  <span class="tag"><a href="papers/attn_cvpr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text anchor"><h4>2017</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vda.gif" alt="spotlight_vda"></div>
+              <div class="text">
+                <div class="title"><a name="vda_nips" href="papers/vda_nips.pdf">Learning to See Physics via Visual De-animation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Erika Lu</span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/vda_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://vda.csail.mit.edu">Project Page</a></span> / 
+                  <span class="tag"><a href="http://news.mit.edu/2017/computer-systems-predict-objects-responses-physical-forces-1214">MIT News</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_marrnet.jpg" alt="Spotlight_marrnet"></div>
+              <div class="text">
+                <div class="title"><a name="marrnet_nips" href="papers/marrnet_nips.pdf">MarrNet: 3D Shape Reconstruction via 2.5D Sketches</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="https://homes.cs.washington.edu/~yifan1/">Yifan Wang</a>*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/marrnet_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://marrnet.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_rin.jpg" alt="Spotlight_rin"></div>
+              <div class="text">
+                <div class="title"><a name="rin_nips" href="papers/rin_nips.pdf">Self-Supervised Intrinsic Image Decomposition</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://tejasdkulkarni.github.io">Tejas D. Kulkarni</a></span>, 
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/rin_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://rin.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Best Paper at the New England Computer Vision Workshop</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_fastsound.jpg" alt="Spotlight_fastsound"></div>
+              <div class="text">
+                <div class="title"><a name="fastsound_nips" href="papers/fastsound_nips.pdf">Shape and Material from Sound</a></div>
+                <div class="authors">
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author"><a href="http://liqiujia.com/">Qiujia Li</a></span>, 
+                  <span class="author">Zhengjia Huang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/fastsound_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sound.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_gensound.jpg" alt="Spotlight_gensound"></div>
+              <div class="text">
+                <div class="title"><a name="gensound_iccv" href="papers/gensound_iccv.pdf">Generative Modeling of Audible Shapes for Object Perception</a></div>
+                <div class="authors">
+                  <span class="author">Zhoutong Zhang*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://liqiujia.com/">Qiujia Li</a></span>, 
+                  <span class="author">Zhengjia Huang</span>,
+                  <span class="author"><a href="http://www.jamestraer.com/">James Traer</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/jhm/www/">Josh H. McDermott</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://iccv2017.thecvf.com/">ICCV 2017</a></span> / 
+                  <span class="tag"><a href="papers/gensound_iccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sound.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_im2cad.jpg" alt="Spotlight_im2cad"></div>
+              <div class="text">
+                <div class="title"><a name="im2cad_iccv" href="papers/im2cad_iccv.pdf">Raster-to-Vector: Revisiting Floorplan Transformation</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.cse.wustl.edu/~chenliu/">Chen Liu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://iccv2017.thecvf.com/">ICCV 2017</a></span> / 
+                  <span class="tag"><a href="papers/im2cad_iccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://www.cse.wustl.edu/~chenliu/floorplan-transformation.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nsd.jpg" alt="Spotlight_nsd"></div>
+              <div class="text">
+                <div class="title"><a name="nsd_cvpr" href="papers/nsd_cvpr.pdf">Neural Scene De-rendering</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2017.thecvf.com/">CVPR 2017</a></span> / 
+                  <span class="tag"><a href="papers/nsd_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nsd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dvae.jpg" alt="Spotlight_3dvae"></div>
+              <div class="text">
+                <div class="title"><a name="3dvae_cvpr" href="papers/3dvae_cvpr.pdf">Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes with Deep Generative Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://amir-arsalan.github.io/">Amir A. Soltani</a></span>,
+                  <span class="author"><a href="https://brotherhuang.github.io/">Haibin Huang</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://tejasdkulkarni.github.io">Tejas D. Kulkarni</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2017.thecvf.com/">CVPR 2017</a></span> / 
+                  <span class="tag"><a href="papers/mv3d_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text anchor"><h4>2016</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vd.gif" alt="Spotlight_vd"></div>
+              <div class="text">
+                <div class="title"><a name="vd_nips" href="papers/vd_nips.pdf">Visual Dynamics: Probabilistic Future Frame Synthesis via Cross Convolutional Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/klbouman/">Katherine L. Bouman</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/vd_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://visualdynamics.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dgan.jpg" alt="Spotlight_3dgan"></div>
+              <div class="text">
+                <div class="title"><a name="3dgan_nips" href="papers/3dgan_nips.pdf">Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dgan_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dgan.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/603107/ai-begins-to-understand-the-3-d-world/">MIT Technology Review</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dinn.jpg" alt="Spotlight_3dinn"></div>
+              <div class="text">
+                <div class="title"><a name="3dinn_eccv" href="papers/3dinn_eccv.pdf">Single Image 3D Interpreter Network</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://yuandong-tian.com">Yuandong Tian</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.eccv2016.org/">ECCV 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dinterpreter.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ambient.jpg" alt="Spotlight_ambient"></div>
+              <div class="text">
+                <div class="title"><a name="ambient_eccv" href="papers/ambient_eccv.pdf">Ambient Sound Provides Supervision for Visual Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://andrewowens.org">Andrew Owens</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/jhm/www/">Josh H. McDermott</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.eccv2016.org/">ECCV 2016</a></span> / 
+                  <span class="tag"><a href="papers/ambient_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://andrewowens.com/ambient/index.html">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_phys.jpg" alt="Spotlight_phys"></div>
+              <div class="text">
+                <div class="title"><a name="phys_bmvc" href="papers/physics_bmvc.pdf">Physics 101: Learning Physical Object Properties from Unlabeled Videos</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/~hongyiz/www/">Hongyi Zhang</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://bmvc2016.cs.york.ac.uk/">BMVC 2016</a></span> / 
+                  <span class="tag"><a href="papers/physics_bmvc.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://phys101.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_blocks.jpg" alt="Spotlight_blocks"></div>
+              <div class="text">
+                <div class="title"><a name="blocks_cogsci" href="papers/blocks_cogsci.pdf">A Comparative Evaluation of Approximate Probabilistic Simulation and Deep Neural Networks as Accounts of Human Physical Scene Understanding</a></div>
+                <div class="authors">
+                  <span class="author">Renqiao Zhang*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://mindmodeling.org/cogsci2016/">CogSci 2016</a></span> / 
+                  <span class="tag"><a href="papers/blocks_cogsci.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://blocks.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text anchor"><h4>2015</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_galileo.jpg" alt="Spotlight_galileo"></div>
+              <div class="text">
+                <div class="title"><a name="galileo_nips" href="papers/galileo_nips.pdf">Galileo: Perceiving Physical Object Properties by Integrating a Physics Engine with Deep Learning</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2015">NeurIPS 2015</a></span> / 
+                  <span class="tag"><a href="papers/galileo_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://galileo.csail.mit.edu">Project Page</a></span> / 
+                  <!-- <span class="tag"><a href="http://phys.csail.mit.edu/galileo/mass/">Demo</a></span> -->
+                  <span class="tag"><a href="http://news.mit.edu/2016/csail-computer-model-matches-humans-predicting-how-objects-move-0104">MIT News</a></span> / 
+                  <span class="tag"><a href="http://motherboard.vice.com/read/how-to-teach-a-robot-to-build-a-rube-goldberg-machine">VICE</a></span> / 
+                  <span class="tag"><a href="http://www.wired.com/2016/01/mit-researchers-are-figuring-out-how-robots-can-wash-dishes/">WIRED</a></span> / 
+                  <span class="tag"><a href="http://www.engadget.com/2016/01/05/mit-galileo-object-predictions/">Engadget</a></span>
+                  <!-- <span class="tag"><a href="http://www.popsci.com/new-computer-program-can-predict-how-things-will-move-just-like-us">Popular Science</a></span> / 
+                  <span class="tag"><a href="http://www.betaboston.com/news/2016/01/04/mit-system-makes-human-like-predictions-about-how-objects-move-through-the-world/">The Boston Globe</a></span> / 
+                  <span class="tag"><a href="http://www.pcworld.com/article/3019425/meet-galileo-a-new-ai-system-from-mit-that-could-help-robots-help-us-during-disasters.html">PCWorld</a></span> / 
+                  <span class="tag"><a href="http://www.techradar.com/us/news/world-of-tech/how-researchers-are-teaching-computers-the-laws-of-physics-1312452">TechRadar</a></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_dmil.jpg" alt="Spotlight_dmil"></div>
+              <div class="text">
+                <div class="title"><a name="dmil_cvpr" href="papers/dmil_cvpr.pdf">Deep Multiple Instance Learning for Image Classification and Auto-Annotation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://www.cbsr.ia.ac.cn/users/ynyu/">Yinan Yu</a></span>,
+                  <span class="author">Chang Huang</span>,
+                  <span class="author">Kai Yu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2015.thecvf.com/"><a href="http://cvpr2015.thecvf.com/">CVPR 2015</a></a></span> / 
+                  <span class="tag"><a href="papers/dmil_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/dmil.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_bmcl.jpg" alt="Spotlight_bmcl"></div>
+              <div class="text">
+                <div class="title"><a name="bmcl_tpami" href="papers/bmcl_tpami.pdf">Unsupervised Object Discovery via Saliency-Guided Multiple Class Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Yan Xu</span>,
+                  <span class="author"><a href="http://research.microsoft.com/en-us/people/echang/">Eric Chang</a></span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/6888473/">TPAMI 2015</a></span> / 
+                  <span class="tag"><a href="papers/bmcl_tpami.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://people.csail.mit.edu/junyanz/projects/bMCL/index.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text anchor"><h4>2014 and before</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_milcut.jpg" alt="Spotlight_milcut"></div>
+              <div class="text">
+                <div class="title"><a name="milcut_cvpr" href="papers/milcut_cvpr.pdf">MILCut: A Sweeping Line Multiple Instance Learning Paradigm for Interactive Image Segmentation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://www.stat.ucla.edu/~ybzhao/">Yibiao Zhao</a>*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author">Siwei Luo</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2014.thecvf.com/">CVPR 2014</a></span> / 
+                  <span class="tag"><a href="papers/milcut_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/milcut.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_motion.jpg" alt="Spotlight_motion"></div>
+              <div class="text">
+                <div class="title"><a name="motion_cogsci" href="papers/motion_cogsci.pdf">Harvesting Motion Patterns in Still Images from the Internet</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://yining-wang.com">Yining Wang</a></span>,
+                  <span class="author">Zhulin Li</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://mindmodeling.org/cogsci2014/">CogSci 2014</a></span> / 
+                  <span class="tag"><a href="papers/motion_cogsci.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/concept.html">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ris.jpg" alt="Spotlight_ris"></div>
+              <div class="text">
+                <div class="title"><a name="ris_bmvc" href="papers/ris_bmvc.pdf">Reverse Image Segmentation: A High-Level Solution to a Low-Level Task</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://bmvc2014.cs.nott.ac.uk/">BMVC 2014</a></span> / 
+                  <span class="tag"><a href="papers/ris_bmvc.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="papers/ris_bmvc_supp.pdf">Supplementary Material</a></span> / 
+                  <span class="tag"><a href="papers/ris_bmvc_abs.pdf">Extended Abstract</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_concept.jpg" alt="Spotlight_concept"></div>
+              <div class="text">
+                <div class="title"><a name="concept_cvpr" href="papers/concept_cvpr.pdf">Harvesting Mid-Level Visual Concepts from Large-Scale Internet Images</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://sites.google.com/site/quannanlissite/">Quannan Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2013.thecvf.com/">CVPR 2013</a></span> / 
+                  <span class="tag"><a href="papers/concept_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/concept.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_bmcl.jpg" alt="Spotlight_bmcl"></div>
+              <div class="text">
+                <div class="title"><a name="bmcl_cvpr" href="papers/bmcl_cvpr.pdf">Unsupervised Object Discovery via Saliency-Guided Multiple Class Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Yichen Wei</span>,
+                  <span class="author"><a href="http://research.microsoft.com/en-us/people/echang/">Eric Chang</a></span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/6248057/">CVPR 2012</a></span> / 
+                  <span class="tag"><a href="papers/bmcl_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://people.csail.mit.edu/junyanz/projects/bMCL/index.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_coref.jpg" alt="Spotlight_coreference"></div>
+              <div class="text">
+                <div class="title"><a name="coreference_jamia" href="papers/coreference_jamia.pdf">A Classification Approach to Coreference in Discharge Summaries: 2011 I2b2 Challenge</a></div>
+                <div class="authors">
+                  <span class="author">Yan Xu</span>,
+                  <span class="author">Jiahua Liu</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://www-personal.umich.edu/~raywang/">Yue Wang</a></span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>,
+                  <span class="author">Jian-Tao Sun</span>,
+                  <span class="author">Junichi Tsujii</span>,
+                  <span class="author"><a href="http://research.microsoft.com/en-us/people/echang/">Eric Chang</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://academic.oup.com/jamia/article/19/5/897/722288">JAMIA 2012</a></span> / 
+                  <span class="tag"><a href="papers/coreference_jamia.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+          </script>
+
+          <script id="pubs_by_topic" language="text">
+            
+            <div class="text anchor" id="phys"><h4>Physical Scene Understanding</h4></div>
+                      
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_cortex.jpg" alt="spotlight_cortex"></div>
+              <div class="text">
+                <div class="title"><a name="cortex_coneur" href="papers/cortex_coneur.pdf">An Integrative Computational Architecture for Object-Driven Cortex</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://bcs.mit.edu/users/ngkmitedu">Nancy Kanwisher</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.sciencedirect.com/science/article/pii/S0959438818301995">CONEUR 2019</a></span> /
+                  <span class="tag"><a href="papers/cortex_coneur.pdf">Paper</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_scenephys.jpg" alt="spotlight_scenephys"></div>
+              <div class="text">
+                <div class="title"><a name="scenephys_nips" href="papers/scenephys_nips.pdf">Learning to Exploit Stability for 3D Scene Parsing</a></div>
+                <div class="authors">
+                  <span class="author">Yilun Du</span>,
+                  <span class="author">Zhijian Liu</span>,
+                  <span class="author"><a href="https://www.cs.bham.ac.uk/~basevhra/">Hector Basevi</a></span>,
+                  <span class="author"><a href="https://www.cs.bham.ac.uk/~leonarda/index.html">Ales Leonardis</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/scenephys_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://scenephys.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dsdn.jpg" alt="spotlight_3dsdn"></div>
+              <div class="text">
+                <div class="title"><a name="3dsdn_nips" href="papers/3dsdn_nips.pdf">3D-Aware Scene Manipulation via Inverse Graphics</a></div>
+                <div class="authors">
+                  <span class="author">Shunyu Yao</span>,
+                  <span class="author"><a href="https://stmharry.github.io/">Tzu-Ming Harry Hsu</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> / 
+                  <span class="tag"><a href="papers/3dsdn_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dsdn.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ppd.jpg" alt="Spotlight_ppd"></div>
+              <div class="text">
+                <div class="title"><a name="ppd_eccv" href="papers/ppd_eccv.pdf">Physical Primitive Decomposition</a></div>
+                <div class="authors">
+                  <span class="author">Zhijian Liu</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/ppd_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ppd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_tree.jpg" alt="Spotlight_tree"></div>
+              <div class="text">
+                <div class="title"><a name="tree_eccv" href="papers/tree_eccv.pdf">Seeing Tree Structure from Vibration</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                  <span class="tag">(* indicates equal contribution)</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/tree_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://tree.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_humanphys.jpg" alt="Spotlight_humanphys"></div>
+              <div class="text">
+                <div class="title"><a name="humanphys_ccn" href="papers/humanphys_ccn.pdf">Neurocomputational Modeling of Human Physical Scene Understanding</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~k2smith/">Kevin Smith</a>*</span>,
+                  <span class="author">Mario Belledonne*</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ccneuro.org/">CCN 2018</a></span> / 
+                  <span class="tag"><a href="papers/humanphys_ccn.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vda.gif" alt="Spotlight_vda"></div>
+              <div class="text">
+                <div class="title"><a name="vda_nips" href="papers/vda_nips.pdf">Learning to See Physics via Visual De-animation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Erika Lu</span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/vda_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://vda.csail.mit.edu">Project Page</a></span> / 
+                  <span class="tag"><a href="http://news.mit.edu/2017/computer-systems-predict-objects-responses-physical-forces-1214">MIT News</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nsd.jpg" alt="Spotlight_nsd"></div>
+              <div class="text">
+                <div class="title"><a name="nsd_cvpr" href="papers/nsd_cvpr.pdf">Neural Scene De-rendering</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2017.thecvf.com/">CVPR 2017</a></span> / 
+                  <span class="tag"><a href="papers/nsd_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nsd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_phys.jpg" alt="Spotlight_phys"></div>
+              <div class="text">
+                <div class="title"><a name="phys_bmvc" href="papers/phys_bmvc.pdf">Physics 101: Learning Physical Object Properties from Unlabeled Videos</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/~hongyiz/www/">Hongyi Zhang</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://bmvc2016.cs.york.ac.uk/">BMVC 2016</a></span> / 
+                  <span class="tag"><a href="papers/physics_bmvc.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://phys101.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_blocks.jpg" alt="Spotlight_blocks"></div>
+              <div class="text">
+                <div class="title"><a name="blocks_cogsci" href="papers/blocks_cogsci.pdf">A Comparative Evaluation of Approximate Probabilistic Simulation and Deep Neural Networks as Accounts of Human Physical Scene Understanding</a></div>
+                <div class="authors">
+                  <span class="author">Renqiao Zhang*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://mindmodeling.org/cogsci2016/">CogSci 2016</a></span> / 
+                  <span class="tag"><a href="papers/blocks_cogsci.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://blocks.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_galileo.jpg" alt="Spotlight_galileo"></div>
+              <div class="text">
+                <div class="title"><a name="galileo_nips" href="papers/galileo_nips.pdf">Galileo: Perceiving Physical Object Properties by Integrating a Physics Engine with Deep Learning</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2015">NeurIPS 2015</a></span> / 
+                  <span class="tag"><a href="papers/galileo_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://galileo.csail.mit.edu">Project Page</a></span> / 
+                  <!-- <span class="tag"><a href="http://phys.csail.mit.edu/galileo/mass/">Demo</a></span> -->
+                  <span class="tag"><a href="http://news.mit.edu/2016/csail-computer-model-matches-humans-predicting-how-objects-move-0104">MIT News</a></span> / 
+                  <span class="tag"><a href="http://motherboard.vice.com/read/how-to-teach-a-robot-to-build-a-rube-goldberg-machine">VICE</a></span> / 
+                  <span class="tag"><a href="http://www.wired.com/2016/01/mit-researchers-are-figuring-out-how-robots-can-wash-dishes/">WIRED</a></span> / 
+                  <span class="tag"><a href="http://www.engadget.com/2016/01/05/mit-galileo-object-predictions/">Engadget</a></span>
+                  <!-- <span class="tag"><a href="http://www.popsci.com/new-computer-program-can-predict-how-things-will-move-just-like-us">Popular Science</a></span> / 
+                  <span class="tag"><a href="http://www.betaboston.com/news/2016/01/04/mit-system-makes-human-like-predictions-about-how-objects-move-through-the-world/">The Boston Globe</a></span> / 
+                  <span class="tag"><a href="http://www.pcworld.com/article/3019425/meet-galileo-a-new-ai-system-from-mit-that-could-help-robots-help-us-during-disasters.html">PCWorld</a></span> / 
+                  <span class="tag"><a href="http://www.techradar.com/us/news/world-of-tech/how-researchers-are-teaching-computers-the-laws-of-physics-1312452">TechRadar</a></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor" id="robot"><h4>Dynamics Models for Robot Manipulation</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_densephysnet.gif" alt="spotlight_densephysnet"></div>
+              <div class="text">
+                <div class="title"><a name="densephysnet_rss" href="papers/densephysnet_rss.pdf">DensePhysNet: Learning Dense Physical Object Representations via Multi-step Dynamic Interactions</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://www.zhenjiaxu.com/">Zhenjia Xu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://andyzeng.github.io/">Andy Zeng</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://shurans.github.io/">Shuran Song</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://www.roboticsconference.org/">RSS 2019</a></span> /
+                  <span class="tag"><a href="papers/densephysnet_rss.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://www.zhenjiaxu.com/DensePhysNet/">Project Page</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_o2p2.jpg" alt="spotlight_o2p2"></div>
+              <div class="text">
+                <div class="title"><a name="o2p2_iclr" href="papers/o2p2_iclr.pdf">Reasoning About Physical Interactions with Object-Oriented Prediction and Planning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a></span>,
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=HJx9EhC9tQ">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/o2p2_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://people.eecs.berkeley.edu/~janner/o2p2/">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_dpi.jpg" alt="Spotlight_dpi"></div>
+              <div class="text">
+                <div class="title"><a name="dpi_iclr" href="papers/dpi_iclr.pdf">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJgbSn09Ym">ICLR 2019</a></span> / 
+                  <span class="tag"><a href="papers/dpi_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://dpi.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/robots-object-manipulation-particle-simulator-0417">MIT News</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_psd.jpg" alt="spotlight_psd"></div>
+              <div class="text">
+                <div class="title"><a name="psd_iclr" href="papers/psd_iclr.pdf">Unsupervised Discovery of Parts, Structure, and Dynamics</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.zhenjiaxu.com/">Zhenjia Xu</a>*</span>,
+                  <span class="author">Zhijian Liu*</span>,
+                  <span class="author"><a href="http://chensun.me/">Chen Sun</a></span>,
+                  <span class="author"><a href="https://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJe10iC5K7">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/psd_iclr.pdf">Paper</a></span> /
+                  <span class="tag"><a href="http://psd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_soccer.jpg" alt="spotlight_soccer"></div>
+              <div class="text">
+                <div class="title"><a name="soccer_iclr" href="papers/soccer_iclr.pdf">Stochastic Prediction of Multi-Agent Interactions from Partial Observations</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://chensun.me/">Chen Sun</a></span>,
+                  <span class="author">Per Karlsson</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="https://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=r1xdH3CcKX">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/soccer_iclr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_jenga.jpg" alt="spotlight_jenga"></div>
+              <div class="text">
+                <div class="title"><a name="jenga_scirobot" href="papers/jenga_scirobot.pdf">See, Feel, Act: Hierarchical Learning for Complex Manipulation Skills with Multi-sensory Fusion</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author">Miquel Oller</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/zhengwu/">Zheng Wu</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://robotics.sciencemag.org/content/4/26/eaav3123">Science Robotics 2019</a></span> /
+                  <span class="tag"><a href="papers/jenga_scirobot.pdf">Paper</a></span> /
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=o1j_amoldMs">Video</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/robot-jenga-0130">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.bbc.com/news/av/technology-47094822/mit-develops-robot-that-uses-ai-to-play-jenga-game">BBC</a></span> /
+                  <span class="tag"><a href="https://www.cbsnews.com/video/mit-students-develop-a-jenga-playing-robot/">CBS</a></span> /
+                  <span class="tag"><a href="https://us.cnn.com/2019/01/31/americas/mit-jenga-robot-scli-intl/index.html">CNN</a></span> /
+                  <!-- <span class="tag"><a href="https://techcrunch.com/2019/01/30/mit-researchers-are-training-a-robot-arm-to-play-jenga/">TechCrunch</a></span> / 
+                  <span class="tag"><a href="https://gizmodo.com/touchy-feely-robots-have-learned-to-play-jenga-as-well-1832121237">Gizmodo</a></span> /
+                  <span class="tag"><a href="https://www.popsci.com/jenga-playing-robot-artificial-intelligence">Popular Science</a></span> / -->
+                  <span class="tag"><a href="https://www.theguardian.com/technology/2019/jan/31/block-party-scientists-celebrate-robot-that-can-play-jenga">The Guardian</a></span> /
+                  <span class="tag"><a href="https://www.wired.com/story/a-robot-teaches-itself-to-play-jenga/">WIRED</a></span> 
+                 </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_chainqueen.jpg" alt="Spotlight_chainqueen"></div>
+              <div class="text">
+                <div class="title"><a name="chainqueen_icra" href="papers/chainqueen_icra.pdf">ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://taichi.graphics/me/">Yuanming Hu</a></span>,
+                  <span class="author">Jiancheng Liu*</span>,
+                  <span class="author"><a href="http://andrewspielberg.com/">Andrew Spielberg</a>*</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://danielarus.csail.mit.edu/">Daniela Rus</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> / 
+                  <span class="tag"><a href="papers/chainqueen_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://github.com/yuanming-hu/ChainQueen">Project Page</a></span> / 
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=4IWD4iGIsB4">Video</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_propnet.jpg" alt="Spotlight_propnet"></div>
+              <div class="text">
+                <div class="title"><a name="propnet_icra" href="papers/propnet_icra.pdf">Propagation Networks for Model-Based Control Under Partial Observation</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> / 
+                  <span class="tag"><a href="papers/propnet_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://propnet.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_sain.jpg" alt="Spotlight_sain"></div>
+              <div class="text">
+                <div class="title"><a name="sain_icra" href="papers/sain_icra.pdf">Combining Physical Simulators and Object-Based Networks for Control</a></div>
+                <div class="authors">
+                  <span class="author">Anurag Ajay</span>,
+                  <span class="author"><a href="http://web.mit.edu/bauza/www/">Maria Bauza</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>,
+                  <span class="author"><a href="https://people.csail.mit.edu/lpk/">Leslie P. Kaelbling</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.icra2019.org/">ICRA 2019</a></span> / 
+                  <span class="tag"><a href="papers/sain_icra.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sain.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_vd.gif" alt="Spotlight_vd"></div>
+              <div class="text">
+                <div class="title"><a name="vd_tpami" href="papers/vd_tpami.pdf">Visual Dynamics: Probabilistic Future Frame Synthesis via Cross Convolutional Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/klbouman/">Katherine L. Bouman</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/8409321/">TPAMI 2019</a></span> / 
+                  <span class="tag"><a href="papers/vd_tpami.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://visualdynamics.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/vd_nips.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_physplus.jpg" alt="Spotlight_physplus"></div>
+              <div class="text">
+                <div class="title"><a name="physplus_iros" href="papers/physplus_iros.pdf">Augmenting Physical Simulators with Stochastic Neural Networks:<br/>Case Study of Planar Pushing and Bouncing</a></div>
+                <div class="authors">
+                  <span class="author">Anurag Ajay</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://nima-fazeli.github.io/">Nima Fazeli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/bauza/www/">Maria Bauza</a></span>,
+                  <span class="author"><a href="https://people.csail.mit.edu/lpk/">Leslie P. Kaelbling</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.iros2018.org/">IROS 2018</a></span> / 
+                  <span class="tag"><a href="papers/physplus_iros.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://physplus.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Best Paper on Cognitive Robotics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ppn.jpg" alt="spotlight_ppn"></div>
+              <div class="text">
+                <div class="title"><a name="ppn_uai" href="papers/ppn_uai.pdf">Unsupervised Learning of Latent Physical Properties Using Perception-Prediction Networks</a></div>
+                <div class="authors">
+                  <span class="author">David Zheng</span>,
+                  <span class="author">Vinson Luo</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://auai.org/uai2018/index.php">UAI 2018</a></span> / 
+                  <span class="tag"><a href="papers/ppn_uai.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ppn.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor" id="reason"><h4>Neuro-Symbolic Visual Reasoning</h4></div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nscl.jpg" alt="spotlight_nscl"></div>
+              <div class="text">
+                <div class="title"><a name="nscl_iclr" href="papers/nscl_iclr.pdf">The Neuro-Symbolic Concept Learner:<br/>Interpreting Scenes, Words, and Sentences from Natural Supervision</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://jiayuanm.com/">Jiayuan Mao</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rJgMlhRctm">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/nscl_iclr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nscl.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="http://news.mit.edu/2019/teaching-machines-to-reason-about-what-they-see-0402">MIT News</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/613270/two-rival-ai-approaches-combine-to-let-machines-learn-about-the-world-like-a-child/">MIT Technology Review</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ngsi.jpg" alt="spotlight_ngsi"></div>
+              <div class="text">
+                <div class="title"><a name="ngsi_icml" href="papers/ngsi_icml.pdf">Neurally-Guided Structure Inference</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://sidilu.cn/">Sidi Lu</a>*</span>,
+                  <span class="author"><a href="http://jiayuanm.com/">Jiayuan Mao</a>*</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://proceedings.mlr.press/v97/lu19b.html">ICML 2019</a></span> /
+                  <span class="tag"><a href="papers/ngsi_icml.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://ngsi.csail.mit.edu">Project Page</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_shape2prog.jpg" alt="spotlight_shape2prog"></div>
+              <div class="text">
+                <div class="title"><a name="shape2prog_iclr" href="papers/shape2prog_iclr.pdf">Learning to Infer and Execute 3D Shape Programs</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/yonglong/">Yonglong Tian</a></span>,
+                  <span class="author">Andrew Luo</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/ellisk/www/">Kevin Ellis</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=rylNH20qFQ">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/shape2prog_iclr.pdf">Paper</a></span> /
+                  <span class="tag"><a href="http://shape2prog.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_scene2prog.jpg" alt="spotlight_scene2prog"></div>
+              <div class="text">
+                <div class="title"><a name="scene2prog_iclr" href="papers/scene2prog_iclr.pdf">Learning to Describe Scenes with Programs</a></div> 
+                <div class="authors">
+                  <span class="author">Yunchao Liu</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/zhengwu/">Zheng Wu</a></span>,
+                  <span class="author"><a href="https://dritchie.github.io/">Daniel Ritchie</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://openreview.net/forum?id=SyNPk2R9K7">ICLR 2019</a></span> /
+                  <span class="tag"><a href="papers/scene2prog_iclr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_nsvqa.jpg" alt="spotlight_nsvqa"></div>
+              <div class="text">
+                <div class="title"><a name="nsvqa_nips" href="papers/nsvqa_nips.pdf">Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding</a></div>
+                <div class="authors">
+                  <span class="author">Kexin Yi*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> / 
+                  <span class="tag"><a href="papers/nsvqa_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://nsvqa.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor" id="gen"><h4>Generative Visual Models</h4></div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dinn.jpg" alt="Spotlight_3dinn"></div>
+              <div class="text">
+                <div class="title"><a name="3dinn_ijcv" href="papers/3dinn_ijcv.pdf">3D Interpreter Networks for Viewer-Centered Wireframe Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a>*</span>,
+                  <span class="author"><a href="http://www-bcf.usc.edu/~limjj/">Joseph J. Lim</a></span>,
+                  <span class="author"><a href="http://yuandong-tian.com">Yuandong Tian</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/article/10.1007/s11263-018-1074-6">IJCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dinterpreter.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.eccv2016.org/">ECCV 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dinn_eccv.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_toflow.jpg" alt="Spotlight_toflow"></div>
+              <div class="text">
+                <div class="title"><a name="toflow_ijcv" href="papers/toflow_ijcv.pdf">Video Enhancement with Task-Oriented Flow</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><span class="author"><a href="http://anchen.me/">Baian Chen</a></span></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><span class="author"><a href="https://donglaiw.github.io/">Donglai Wei</a></span></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/journal/11263">IJCV 2019</a></span> / 
+                  <span class="tag"><a href="papers/toflow_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://toflow.csail.mit.edu/">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_genre.jpg" alt="spotlight_genre"></div>
+              <div class="text">
+                <div class="title"><a name="genre_nips" href="papers/genre_nips.pdf">Learning to Reconstruct Shapes from Unseen Classes</a></div> 
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>*</span>,
+                  <span class="author">Zhoutong Zhang*</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,  
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author jw">Jiajun Wu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/genre_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://genre.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_von.jpg" alt="spotlight_von"></div>
+              <div class="text">
+                <div class="title"><a name="von_nips" href="papers/von_nips.pdf">Visual Object Networks: Image Generation with Disentangled 3D Representations</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>, 
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>, 
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2018">NeurIPS 2018</a></span> /
+                  <span class="tag"><a href="papers/von_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://von.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_shapehd.jpg" alt="Spotlight_shapehd"></div>
+              <div class="text">
+                <div class="title"><a name="shapehd_eccv" href="papers/shapehd_eccv.pdf">Learning Shape Priors for Single-View 3D Completion and Reconstruction</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://eccv2018.org/">ECCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/shapehd_eccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://shapehd.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_mosculp.gif" alt="Spotlight_mosculp"></div>
+              <div class="text">
+                <div class="title"><a name="mosculp_uist" href="papers/mosculp_uist.pdf">MoSculp: Interactive Visualization of Shape and Time</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/talidekel/">Tali Dekel</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://andrewowens.org">Andrew Owens</a></span>,
+                  <span class="author">Qiurui He</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://hcie.csail.mit.edu/stefanie-mueller.html">Stefanie Mueller</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://uist.acm.org/uist2018/">UIST 2018</a></span> / 
+                  <span class="tag"><a href="papers/mosculp_uist.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://mosculp.csail.mit.edu">Project Page</a></span> / 
+                  <span class="tag"><a href="http://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919">MIT News</a></span> / 
+                  <span class="tag"><a href="https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures/#5271cd2243c2">Forbes</a></span> / 
+                  <span class="tag"><a href="https://www.youtube.com/watch?v=5J3LhRwx7nE&feature=youtu.be&t=9m13s">BBC</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_pix3d.jpg" alt="spotlight_pix3d"></div>
+              <div class="text">
+                <div class="title"><a name="pix3d_cvpr" href="papers/pix3d_cvpr.pdf">Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author">Chengkai Zhang</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2018.thecvf.com/">CVPR 2018</a></span> / 
+                  <span class="tag"><a href="papers/pix3d_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://pix3d.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_marrnet.jpg" alt="Spotlight_marrnet"></div>
+              <div class="text">
+                <div class="title"><a name="marrnet_nips" href="papers/marrnet_nips.pdf">MarrNet: 3D Shape Reconstruction via 2.5D Sketches</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="https://homes.cs.washington.edu/~yifan1/">Yifan Wang</a>*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/marrnet_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://marrnet.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_rin.jpg" alt="Spotlight_rin"></div>
+              <div class="text">
+                <div class="title"><a name="rin_nips" href="papers/rin_nips.pdf">Self-Supervised Intrinsic Image Decomposition</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://tejasdkulkarni.github.io">Tejas D. Kulkarni</a></span>, 
+                  <span class="author"><a href="http://www.mit.edu/~ilkery/">Ilker Yildirim</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/rin_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://rin.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_im2cad.jpg" alt="Spotlight_im2cad"></div>
+              <div class="text">
+                <div class="title"><a name="im2cad_iccv" href="papers/im2cad_iccv.pdf">Raster-to-Vector: Revisiting Floorplan Transformation</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://www.cse.wustl.edu/~chenliu/">Chen Liu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a></span>,
+                  <span class="author"><a href="http://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://iccv2017.thecvf.com/">ICCV 2017</a></span> / 
+                  <span class="tag"><a href="papers/im2cad_iccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://www.cse.wustl.edu/~chenliu/floorplan-transformation.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dvae.jpg" alt="Spotlight_3dvae"></div>
+              <div class="text">
+                <div class="title"><a name="3dvae_cvpr" href="papers/3dvae_cvpr.pdf">Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes with Deep Generative Networks</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://amir-arsalan.github.io/">Amir A. Soltani</a></span>,
+                  <span class="author"><a href="https://brotherhuang.github.io/">Haibin Huang</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="https://tejasdkulkarni.github.io">Tejas D. Kulkarni</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2017.thecvf.com/">CVPR 2017</a></span> / 
+                  <span class="tag"><a href="papers/mv3d_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_3dgan.jpg" alt="Spotlight_3dgan"></div>
+              <div class="text">
+                <div class="title"><a name="3dgan_nips" href="papers/3dgan_nips.pdf">Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author">Chengkai Zhang*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/tfxue/">Tianfan Xue</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2016">NeurIPS 2016</a></span> / 
+                  <span class="tag"><a href="papers/3dgan_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://3dgan.csail.mit.edu">Project Page</a></span> /
+                  <span class="tag"><a href="https://www.technologyreview.com/s/603107/ai-begins-to-understand-the-3-d-world/">MIT Technology Review</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor" id="multi"><h4>Multi-Modal Perception</h4></div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_combsound.jpg" alt="spotlight_combsound"></div>
+              <div class="text">
+                <div class="title"><a name="combsound_ccn" href="papers/combsound_ccn.pdf">A Computational Model for Combinatorial Generalization in Physical Perception from Sound</a></div>
+                <div class="authors">
+                  <span class="author">Yunyun Wang</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/maxs/www/">Max H. Siegel</a></span>,
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ccneuro.org/2019/">CCN 2019</a></span> /
+                  <span class="tag"><a href="papers/combsound_ccn.pdf">Paper</a></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_ambient.jpg" alt="Spotlight_ambient"></div>
+              <div class="text">
+                <div class="title"><a name="ambient_ijcv" href="papers/ambient_ijcv.pdf">Learning Sight from Sound: Ambient Sound Provides Supervision for Visual Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://andrewowens.org">Andrew Owens</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/jhm/www/">Josh H. McDermott</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://link.springer.com/article/10.1007/s11263-018-1083-5">IJCV 2018</a></span> / 
+                  <span class="tag"><a href="papers/ambient_ijcv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://andrewowens.com/ambient/index.html">Project Page</a></span> 
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.eccv2016.org/">ECCV 2016</a></span> / 
+                  <span class="tag"><a href="papers/ambient_eccv.pdf">Paper</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_touch.jpg" alt="Spotlight_touch"></div>
+              <div class="text">
+                <div class="title"><a name="touch_iros" href="papers/touch_iros.pdf">3D Shape Perception from Monocular Vision, Touch, and Shape Priors</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://wx405557858.github.io/">Shaoxiong Wang</a>*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a></span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/yuan_wz/">Wenzhen Yuan</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu">William T. Freeman</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://persci.mit.edu/people/adelson">Edward H. Adelson</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://www.iros2018.org/">IROS 2018</a></span> / 
+                  <span class="tag"><a href="papers/touch_iros.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://touch.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_attn.jpg" alt="spotlight_attn"></div>
+              <div class="text">
+                <div class="title"><a name="attn_cvpr" href="papers/attn_cvpr.pdf">Attention Clusters: Purely Attention Based Local Feature Integration for Video Classification</a></div>
+                <div class="authors">
+                  <span class="author">Xiang Long</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                  <span class="author">Gerard de Melo</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Xiao Liu</span>,
+                  <span class="author">Shilei Wen</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2018.thecvf.com/">CVPR 2018</a></span> / 
+                  <span class="tag"><a href="papers/attn_cvpr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_fastsound.jpg" alt="Spotlight_fastsound"></div>
+              <div class="text">
+                <div class="title"><a name="fastsound_nips" href="papers/fastsound_nips.pdf">Shape and Material from Sound</a></div>
+                <div class="authors">
+                  <span class="author">Zhoutong Zhang</span>,
+                  <span class="author"><a href="http://liqiujia.com/">Qiujia Li</a></span>, 
+                  <span class="author">Zhengjia Huang</span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://nips.cc/Conferences/2017">NeurIPS 2017</a></span> / 
+                  <span class="tag"><a href="papers/fastsound_nips.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sound.csail.mit.edu">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Spotlight Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_gensound.jpg" alt="Spotlight_gensound"></div>
+              <div class="text">
+                <div class="title"><a name="gensound_iccv" href="papers/gensound_iccv.pdf">Generative Modeling of Audible Shapes for Object Perception</a></div>
+                <div class="authors">
+                  <span class="author">Zhoutong Zhang*</span>,
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://liqiujia.com/">Qiujia Li</a></span>, 
+                  <span class="author">Zhengjia Huang</span>,
+                  <span class="author"><a href="http://www.jamestraer.com/">James Traer</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/jhm/www/">Josh H. McDermott</a></span>,
+                  <span class="author"><a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a></span>,
+                  <span class="author"><a href="http://billf.mit.edu/">William T. Freeman</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://iccv2017.thecvf.com/">ICCV 2017</a></span> / 
+                  <span class="tag"><a href="papers/gensound_iccv.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://sound.csail.mit.edu">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text anchor" id="wsl"><h4>Weakly-Supervised Learning</h4></div>
+            
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_dmil.jpg" alt="Spotlight_dmil"></div>
+              <div class="text">
+                <div class="title"><a name="dmil_cvpr" href="papers/dmil_cvpr.pdf">Deep Multiple Instance Learning for Image Classification and Auto-Annotation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://www.cbsr.ia.ac.cn/users/ynyu/">Yinan Yu</a></span>,
+                  <span class="author">Chang Huang</span>,
+                  <span class="author">Kai Yu</span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2015.thecvf.com/"><a href="http://cvpr2015.thecvf.com/">CVPR 2015</a></a></span> / 
+                  <span class="tag"><a href="papers/dmil_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/dmil.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_bmcl.jpg" alt="Spotlight_bmcl"></div>
+              <div class="text">
+                <div class="title"><a name="bmcl_tpami" href="papers/bmcl_tpami.pdf">Unsupervised Object Discovery via Saliency-Guided Multiple Class Learning</a></div>
+                <div class="authors">
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author">Yan Xu</span>,
+                  <span class="author"><a href="http://research.microsoft.com/en-us/people/echang/">Eric Chang</a></span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/6888473/">TPAMI 2015</a></span> / 
+                  <span class="tag"><a href="papers/bmcl_tpami.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="http://people.csail.mit.edu/junyanz/projects/bMCL/index.html">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://ieeexplore.ieee.org/document/6248057/">CVPR 2012</a></span> / 
+                  <span class="tag"><a href="papers/bmcl_cvpr.pdf">Paper</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_milcut.jpg" alt="Spotlight_milcut"></div>
+              <div class="text">
+                <div class="title"><a name="milcut_cvpr" href="papers/milcut_cvpr.pdf">MILCut: A Sweeping Line Multiple Instance Learning Paradigm for Interactive Image Segmentation</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu*</span>,
+                  <span class="author"><a href="http://www.stat.ucla.edu/~ybzhao/">Yibiao Zhao</a>*</span>,
+                  <span class="author"><a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a></span>,
+                  <span class="author">Siwei Luo</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2014.thecvf.com/">CVPR 2014</a></span> / 
+                  <span class="tag"><a href="papers/milcut_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/milcut.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_motion.jpg" alt="Spotlight_motion"></div>
+              <div class="text">
+                <div class="title"><a name="motion_cogsci" href="papers/motion_cogsci.pdf">Harvesting Motion Patterns in Still Images from the Internet</a></div>
+                <div class="authors">
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://yining-wang.com">Yining Wang</a></span>,
+                  <span class="author">Zhulin Li</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="https://mindmodeling.org/cogsci2014/">CogSci 2014</a></span> / 
+                  <span class="tag"><a href="papers/motion_cogsci.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/concept.html">Project Page</a></span>
+                </div>
+                <div>
+                  <span class="highlight">Oral Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="img"><img class="img_responsive" src="images/spotlight_concept.jpg" alt="Spotlight_concept"></div>
+              <div class="text">
+                <div class="title"><a name="concept_cvpr" href="papers/concept_cvpr.pdf">Harvesting Mid-Level Visual Concepts from Large-Scale Internet Images</a></div>
+                <div class="authors">
+                  <span class="author"><a href="https://sites.google.com/site/quannanlissite/">Quannan Li</a></span>,
+                  <span class="author jw">Jiajun Wu</span>,
+                  <span class="author"><a href="http://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+                </div>
+                <div>
+                  <span class="venue"><a href="http://cvpr2013.thecvf.com/">CVPR 2013</a></span> / 
+                  <span class="tag"><a href="papers/concept_cvpr.pdf">Paper</a></span> / 
+                  <span class="tag"><a href="projects/concept.html">Project Page</a></span>
+                </div>
+              </div>
+            </div>
+
+          </script>
+
+        </div>  <!-- content -->
+
+      </div> <!-- container -->
+    </div> <!-- outer container -->
+
+    <script>showPubs(0);</script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+
+  </body>
+
+</html>
+
