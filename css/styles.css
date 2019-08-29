@@ -17,7 +17,12 @@ h2 {
     padding: 0;
     margin: .5em 0em 0em 0em;
 }
-
+h3 {
+    font-size: 14;
+    font-family: 'Helvetica Light', 'Lato', sans-serif;
+    padding: 20px;
+    margin: 0em 0em 0em 0em;
+}
 input {
     margin: 20px;
 }
