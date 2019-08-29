@@ -132,6 +132,10 @@ p {
     width: 200px;
 }
 
+.topnav h1{
+    padding: 30px;
+}
+
 /*text editor*/
 li.main {
     font-family: 'Lato', bold;
@@ -141,7 +145,6 @@ li.main {
 .topnav {
     background-color: #6D7D7F;
     overflow: hidden;
-    padding: 30px;
 }
 .side-bar {
     flex-grow: 1;
